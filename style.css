@@ -1,0 +1,233 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: ptsans;
+}
+
+@font-face{
+	font-family: "Courgette";
+	src: url(Courgette-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "ptsans";
+	src: url(PTSans-Regular.ttf);
+	font-weight: normal;
+}
+
+header{
+	background: #6ba050;
+	height: 2cm;
+}
+
+nav a{
+	color: inherit;
+	text-decoration: none;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px gray;
+	position: relative;
+	bottom: 15px;
+	right: 25px;
+}
+
+nav li{
+	color: white;
+	list-style-type: none;
+	display: inline;
+	margin: 10px;
+	float: right;
+	position: relative;
+	bottom: 30px;
+}
+
+.chez{
+	color: white;
+	font-family: Courgette;
+	font-size: 45px;
+	position: relative;
+	left: 15px;
+	top: 10px
+}
+.chez img{
+	width: 48px;
+	height: 45px;
+}
+
+
+.villa{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.prix{
+	border-radius: 4px 4px 4px 4px;
+	background: rgba(216, 216, 216, 0.85);
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+	width: 20cm;
+}
+
+.prix .sugg{
+	color: #6ba050;
+	font-size: 40px;
+	text-align: center;
+}
+
+.prix .esti{
+	color: #2a2a2a;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	bottom: 15px;
+}
+
+#prix{
+	border: none;
+	background: inherit;
+	width: 2cm;
+	font-size: 20px;
+	border-bottom: 1px solid black;
+	outline: none;
+}
+
+section{
+	color: white;
+	display: flex;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	background: rgba(216, 216, 216, 0.5);
+	height: 10cm;
+}
+
+section div{
+	background:  #6ba050;
+	width: 210px;
+	height: 270px;
+	margin: 10px;
+}
+
+section div img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 210px;
+	height: 150px;
+}
+
+section div p{
+	text-align: center;
+}
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background: #414347;
+	height: 5cm;
+	position: absolute;
+	top: 140%;	
+	transform: translate(0%);
+	
+	
+}
+
+footer .copy h3{
+	position: relative;
+	top: 40px;
+}
+
+footer .copy img{
+	width: 45px;
+	height: 45px;
+	
+}
+
+footer .app img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 35px;
+	height: 35px;
+}
+
+footer .copy{
+	margin-left: 80px;
+}
+
+footer .apropos{
+	margin-right: 80px;
+}
+
+/*media queries*/
+
+@media screen and (min-width: 1590px){
+	body{
+		background-color: #c6c6c6;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.villa{
+		width: 1000px;
+		height: 500px;
+	}
+
+	section{
+		display: flex;
+		flex-wrap: wrap;
+		height: auto;
+		margin-bottom: 50px;
+	}
+
+	footer{
+		position: absolute;
+		top: 500%;
+		transform: translateY(-400%); 
+		display: flex;
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.prix{
+		position: absolute;
+		top: 80%;
+		width: 13cm;
+	}
+
+	.prix .sugg{
+		font-size: 25px;
+	}
+
+	.prix .esti{
+		font-size: 15px;
+	}
+
+	section div{
+		margin-left: auto;
+		margin-right: auto;
+		width: 400px;
+		height: 10cm;
+		margin-top: 15px;
+
+	}
+
+	section div img{
+		width: 400px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 750px){
+	footer{
+		position: absolute;
+		top: 600%;
+		transform: translateY(-500%);
+		height: auto;
+	}
+}
